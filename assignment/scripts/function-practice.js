@@ -30,19 +30,24 @@ console.log('The sum of the 3 & 4 =', addNumbers( 3, 4 ));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( num1, num2, num3 ){
+  let answer = num1 * num2 * num3;
+  return answer;
 }
 
+console.log('The result of 3x4x5 =', multiplyThree( 3, 4, 5 ));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
+
+// console.log('The function should return true of number = 1. Result =', isPositive(1));
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );

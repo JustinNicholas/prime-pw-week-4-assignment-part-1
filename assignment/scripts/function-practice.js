@@ -135,3 +135,20 @@ console.log('This should console log only 1, 5, 7, and 2', posArray);
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Add up the Numbers from a Single Number
+//Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+function addNums( endNum ){
+  let sumBeforeNums = 0;
+  for ( i=0; i<endNum; i++){
+    sumBeforeNums += i;
+  }
+  sumBeforeNums += endNum;
+  return sumBeforeNums;
+}
+
+console.log('summ of all numbers from 0 to 5 = 15. My function =', addNums(5));
+console.log('summ of all numbers from 0 to 10 = 55. My function =', addNums(10));
+
+//I had to put the sumBeforeNums variable in the function or else they add when calling the function for a second time when I had it as a global variable. 

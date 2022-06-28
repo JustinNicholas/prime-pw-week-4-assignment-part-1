@@ -116,6 +116,20 @@ console.log('This should sum array of [ 1, 2, 3, 4, 5, 6 ] and equal 21. sum =',
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let posArray = [];
+
+function positiveArray( inputArray ){
+  for ( i=0; i<inputArray.length; i++){
+    if ( inputArray[i] > 0 ){
+      posArray.push(inputArray[i]);
+    } else {
+
+    }
+  }
+}
+
+positiveArray([ 1, -6, 5, 7, 0, -12, 2])
+console.log('This should console log only 1, 5, 7, and 2', posArray);
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 

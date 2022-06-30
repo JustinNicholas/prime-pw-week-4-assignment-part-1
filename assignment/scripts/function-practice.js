@@ -72,7 +72,7 @@ console.log('This should return undefined', getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  for ( i=0; i<array.length; i++){
+  for ( let i = 0; i<array.length; i++){
     if (value === array[i]){
       console.log(true);
     } else {
@@ -81,7 +81,7 @@ function find( value, array ){
   }
 }
 
-console.log('This should log false, true, false, false, false', find( 2, [ 10, 2, 6, 3, 5]));
+console.log('This should log false, true, false, false, false', find( 2, [10, 2, 6, 3, 5]));
 
 // ----------------------
 // Stretch Goals
@@ -103,7 +103,7 @@ console.log( 'isFirstLetter where letter is "Z"- should say false', isFirstLette
 function sumAll( array ) {
   let sum = 0
   // TODO: loop to add items
-  for ( i=0; i<array.length; i++ ){
+  for ( let i = 0; i<array.length; i++ ){
     sum += array[i];
   }
 
@@ -119,7 +119,7 @@ console.log('This should sum array of [ 1, 2, 3, 4, 5, 6 ] and equal 21. sum =',
 let posArray = [];
 
 function positiveArray( inputArray ){
-  for ( i=0; i<inputArray.length; i++){
+  for ( let i = 0; i<inputArray.length; i++){
     if ( inputArray[i] > 0 ){
       posArray.push(inputArray[i]);
     } else {
@@ -141,7 +141,7 @@ console.log('This should console log only 1, 5, 7, and 2', posArray);
 
 function addNums( endNum ){
   let sumBeforeNums = 0;
-  for ( i=0; i<endNum; i++){
+  for ( let i = 0; i<endNum; i++){
     sumBeforeNums += i;
   }
   sumBeforeNums += endNum;
